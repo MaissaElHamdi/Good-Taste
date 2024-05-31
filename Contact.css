@@ -1,0 +1,269 @@
+body{
+  margin: 0;
+}
+
+/*topnav*/
+.topnav-content {
+  background-color: white;
+  margin-top: 20px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.logo-content {
+  margin-right: 250px;
+}
+
+.topnav a {
+  float: left;
+
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  color: #e1d2a6;
+}
+
+.topnav a.active {
+  color: #968962;
+}
+
+
+.foot{
+  background-color: rgb(45, 44, 44);
+  padding-bottom:0;
+  height:60vh;
+  
+
+}
+
+
+footer .container{
+
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom:0;
+  margin-bottom:0;
+  height:50vh;
+}
+
+ul{
+  list-style: none;
+}
+
+.f-col{
+  width: 32%;
+  padding: 0 15px;
+}
+
+.f-col h3{
+text-align:center;
+  font-size: 2vw;
+color: white;
+margin-bottom: 8vh;
+font-weight: 500;
+position: relative;
+}
+
+.f-col h3::before{
+  content: '';
+ position: absolute;
+ left:11vw;
+ bottom: -10px;
+ background-color: rgb(238, 131, 9);
+height: 2px;
+box-sizing: border-box;
+width: 80px;
+}
+
+.f-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.f-col ul li a {
+  padding-top: 6px;
+  font-size: 1.8vw;
+color: white;
+text-decoration: none;
+font-weight: 300;
+display: block;
+transition: all 0.3s ease;
+}
+
+
+
+.f-col ul li a:hover{
+  color: rgb(238, 131, 9);
+  padding-left: 10px;
+}
+
+.f-col ul li i {
+  background-color: white;
+  height: 40px;
+width: 40px;
+  text-align: center;
+line-height: 40px;
+border-radius: 50%;
+  color: #1d202b;
+  transition: all 0.5s ease;
+  margin-left:0;
+  
+}
+
+.icon-center{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
+.f-col .icon-right a {
+  display: inline-block;
+height: 40px;
+width: 40px;
+background-color: white;
+margin:0 20px 20px 10px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: rgb(45, 44, 44);
+transition: all 0.5s ease;
+  
+}
+
+
+
+.f-col .icon-right a:hover{
+  color: white;
+  background-color:rgb(238, 131, 9);
+}
+
+footer p{
+  font-family: futura bold;
+  font-size: 16px;
+  color:white;
+  
+}
+#phone{
+  padding-top: 5px;
+}
+
+@media(max-width: 767px){
+  .f-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .f-col{
+    width: 100%;
+}
+}
+
+
+
+
+.main_bg{
+  background:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./assets/banner-img.jpg") center/cover no-repeat;;
+  max-width: 100vw;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.form{
+  width: 650px;
+}
+
+.form-text{
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.form-text h1{
+  color: #fff;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 4VW;
+  margin-bottom: 20px;
+}
+.form-text p{
+  color: #fff;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: large;
+}
+
+.main-form div{
+  margin: 10px 10px;
+  width: 300px;
+  display: inline-block;
+}
+.main-form div input {
+  width: 100%;
+  font-family: 'Akaya Telivigala', cursive;
+  background: none;
+  border: 1px solid#e9be52;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+.main-form div select{
+  width: 104%;
+  font-family: 'Akaya Telivigala', cursive;
+  background: none;
+  border: 1px solid #e9be52;;
+  font-size: 20px;
+  color: gray;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+
+.main-form div span{
+  width: 100%;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #fff;
+  font-size: 25px;
+}
+
+#submit{
+  width: 100%;
+  text-align: center;
+}
+#submit input{
+  margin-left: 8vw;
+  font-family: 'Akaya Telivigala', cursive;
+  width: 200px;
+  background-color: #e9be52 ;
+  color: black ;
+  transition: all .3s;
+}
+#submit input:hover{
+  font-family: 'Akaya Telivigala', cursive;
+  width: 200px;
+  background-color: black ;
+  color: #fff ;
+}
+#submit input:active{
+  font-size: 19px;
+  background-color: rgb(46, 20, 5) ;
+  color: #fff ;
+}
+
